@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <div id="codeContainer">
+      <textarea id="code">
+
+        Trig s(frequency=0.2);
+        Trig co(frequency=0.53);
+        Line l;
+        Math m;
+        s.sin->m.a;
+        co.sin->m.b;
+        m.aTimesB -> l.x;
+        s.cos -> l.y;
+        co.sin -> l.r;
+        co.cos -> l.b;
+        s.tan -> l.g;
+        
+      </textarea>
+      <button id="run">Run</button>
+      <div><code id="error"></code></div>
+    </div>
+    <script src="keycodes.js"></script>
+    <script src="parser.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#codeContainer {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #fff;
+  right: 0%;
+}
+
+textarea {
+  width: 100%;
+  height: 75%;
+}
+
+button {
+  width: 100%;
+  height: 5%;
+}
+
+#error {
+  width: 100%;
+  height: 20%;
+  overflow: scroll;
+  color: red;
+}
